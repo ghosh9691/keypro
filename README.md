@@ -187,8 +187,8 @@ The reference implementation imports `.chordpro` files and exports back to `.cho
 
 The KeyPro reference implementation is a cross-platform application built with **.NET / C# and .NET MAUI**:
 
-| Platform | Status |
-|---|---|
+| Platform | Status | Cost |
+|---|---|---|
 | Windows | v1.0 target | Free |
 | macOS | v1.0 target | Free |
 | iOS / iPadOS | v2.0 target | $9.99 One Time |
