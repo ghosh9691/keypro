@@ -194,6 +194,10 @@ The KeyPro reference implementation is a cross-platform application built with *
 | iOS / iPadOS | v2.0 target | $9.99 One Time |
 | Android | v2.0 target | $9.99 One Time |
 
+> iOS and Android pricing offsets Apple Developer Program and Google Play 
+> registration costs. The spec itself and all desktop applications will 
+> always be free.
+
 ### Repository Structure
 
 ```
