@@ -189,10 +189,10 @@ The KeyPro reference implementation is a cross-platform application built with *
 
 | Platform | Status |
 |---|---|
-| Windows | v1.0 target |
-| macOS | v1.0 target |
-| iOS / iPadOS | v2.0 target |
-| Android | v2.0 target |
+| Windows | v1.0 target | Free |
+| macOS | v1.0 target | Free |
+| iOS / iPadOS | v2.0 target | $9.99 One Time |
+| Android | v2.0 target | $9.99 One Time |
 
 ### Repository Structure
 
