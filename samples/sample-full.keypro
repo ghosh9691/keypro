@@ -1,0 +1,139 @@
+# sample-full.keypro
+# A full KeyPro file demonstrating the complete feature set.
+# Showcases: absolute note riff notation with transposition, NNS riff annotation,
+# kp-layer for split keyboard setup, kp-measure, kp-patch changes,
+# kp-section markers, riff reuse by reference, and multi-hand riff annotation.
+#
+# Song: The House of the Rising Sun — Traditional / The Animals arrangement
+# Genre: English classic rock
+# Key: Am (natural minor — well-suited to demonstrating minor key transposition)
+#
+# Performance notes:
+# - Classic arpeggiated left hand pattern throughout
+# - The intro arpeggio is the signature — nail it every time
+# - Patch: organ on verses, swell to strings on final chorus
+# - This chart demonstrates a full keyboard split setup
+
+{kp-version: 0.1}
+{title: The House of the Rising Sun}
+{artist: The Animals}
+{key: Am}
+{kp-scale: Minor}
+{tempo: 78}
+{kp-feel: Slow triplet feel — 6/8 sensibility in 4/4}
+{kp-notation: absolute}
+{kp-enharmonic: flats}
+
+{kp-patch: name="Hammond Organ" program=16 channel=1}
+
+{kp-layer: name="Right hand" range-low="C4" range-high="C7" patch="Hammond Organ"}
+{kp-layer: name="Left hand" range-low="A1" range-high="B3" patch="Hammond Organ" comment="Arpeggiate — do not block chord"}
+
+# ─────────────────────────────────────────────
+# INTRO
+# ─────────────────────────────────────────────
+
+{kp-section: type="intro" label="Intro — establish arpeggio pattern"}
+{kp-measure: beats=4 bars=2 label="Two bar intro vamp — set the groove"}
+
+{kp-riff: id="intro-arpeggio" notes="A2 E3 A3 C4 E4 C4 A3 E3" label="Signature intro arpeggio" hand="left" comment="This is the heartbeat of the song — keep it steady throughout"}
+
+{kp-riff: id="verse-melody-open" notes="A4 G4 E4 C4 D4 E4 A4" label="Opening melodic phrase" hand="right"}
+
+[Am] [C] [D] [F]
+[Am] [E7] [Am] [E7]
+
+# ─────────────────────────────────────────────
+# VERSE 1
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Verse 1"}
+
+{kp-riff: ref="intro-arpeggio"}
+
+There is a [Am]house in [C]New Orleans
+they [D]call the Rising [F]Sun
+And it's [Am]been the ruin of [C]many a poor boy
+and [E7]God I know I'm [Am]one [E7]
+
+# ─────────────────────────────────────────────
+# VERSE 2
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Verse 2"}
+
+My [Am]mother was a [C]tailor
+she [D]sewed my new blue [F]jeans
+My [Am]father was a [C]gambling man
+down in [E7]New Or[Am]leans [E7]
+
+# ─────────────────────────────────────────────
+# INTERLUDE
+# ─────────────────────────────────────────────
+
+{kp-section: type="interlude" label="Interlude — keyboard solo"}
+{kp-measure: beats=4 bars=4 label="4 bar solo — stay in Am pentatonic"}
+
+{kp-riff: id="solo-phrase-1" notes="A4 C5 D5 E5 G5 E5 D5 C5" label="Solo phrase 1 — ascending then resolve" hand="right" comment="Play with feel — this is not a fixed melody, use as a guide"}
+{kp-riff: id="solo-phrase-2" notes="E5 D5 C5 A4 G4 A4 C5 E5" label="Solo phrase 2 — descending answer" hand="right"}
+
+{kp-riff: ref="solo-phrase-1"}
+[Am] [C] [D] [F]
+
+{kp-riff: ref="solo-phrase-2"}
+[Am] [E7] [Am] [E7]
+
+# ─────────────────────────────────────────────
+# VERSE 3
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Verse 3"}
+
+Now the [Am]only thing a [C]gambler needs
+is a [D]suitcase and a [F]trunk
+And the [Am]only time he's [C]satisfied
+is [E7]when he's on a [Am]drunk [E7]
+
+# ─────────────────────────────────────────────
+# VERSE 4
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Verse 4"}
+{kp-patch: name="Strings Pad" program=49 channel=1 comment="Swell in here — build toward the climax"}
+
+Oh [Am]mother tell your [C]children
+not to [D]do what I have [F]done
+Spend your [Am]lives in sin and [C]misery
+in the [E7]House of the Rising [Am]Sun [E7]
+
+# ─────────────────────────────────────────────
+# VERSE 5 — Final, climactic
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Verse 5 — Final"}
+{kp-patch: name="Hammond Organ" program=16 channel=1 comment="Back to organ — full and strong for the finish"}
+{kp-measure: beats=4 bars=8 feel="build" label="Final verse — build intensity throughout"}
+
+{kp-riff: id="final-fill" notes="1 b3 4 5 b7 5 4 b3" notation="nns" label="Final verse fill — NNS, play in the feel of the key" comment="Relative notation — works in any key you've transposed to"}
+
+Well I've got [Am]one foot on the [C]platform
+the [D]other foot on the [F]train
+I'm going [Am]back to New Or[C]leans
+to [E7]wear that ball and [Am]chain [E7]
+
+Well there [Am]is a house in [C]New Orleans
+they [D]call the Rising [F]Sun
+And it's [Am]been the ruin of [C]many a poor boy
+and [E7]God I know I'm [Am]one [E7]
+
+# ─────────────────────────────────────────────
+# OUTRO
+# ─────────────────────────────────────────────
+
+{kp-section: type="outro" label="Outro — slow decay"}
+{kp-measure: beats=4 bars=4 label="Repeat arpeggio and fade — let it breathe"}
+
+{kp-riff: ref="intro-arpeggio"}
+
+[Am] [C] [D] [F]
+[Am] [E7] [Am] [Am]

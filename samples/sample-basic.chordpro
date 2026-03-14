@@ -1,0 +1,52 @@
+# sample-basic.chordpro
+# A plain ChordPro file — no KeyPro directives.
+# This file demonstrates that all valid .chordpro files are valid KeyPro documents.
+# Open this in any ChordPro-compatible app (OnSong, ChordPro reference app, etc.)
+# and it will render correctly. Open it in a KeyPro app and it renders identically.
+#
+# Song: Wonderful Tonight — Eric Clapton
+# Genre: English classic rock ballad
+# This is the kind of chart a keyboard player would bring to a covers gig.
+
+{title: Wonderful Tonight}
+{artist: Eric Clapton}
+{key: G}
+{tempo: 96}
+
+{comment: Intro}
+[G] [D] [C] [D]
+
+{comment: Verse 1}
+It's [G]late in the even[D]ing,
+she's [C]wondering what clothes to [D]wear
+
+She [G]puts on her make[D]up
+and [C]brushes her long blonde [D]hair
+
+And then she [C]asks me,
+[D]do I look all[G]right? [Em]
+
+And I say [C]yes, you look [D]wonderful to[G]night [D]
+
+{comment: Chorus}
+I feel [C]wonderful because I [D]see
+the love light in your [G]eyes [Em]
+
+And the [C]wonder of it [D]all
+is that you just don't real[G]ize
+how much I [D]love [G]you
+
+{comment: Verse 2}
+It's [G]late in the even[D]ing,
+and I [C]wonder what it's like to be [D]free
+
+She [G]puts on her make[D]up
+and [C]brushes her long blonde [D]hair
+
+And then she [C]asks me,
+[D]do I look all[G]right? [Em]
+
+And I say [C]yes, you look [D]wonderful to[G]night [D]
+
+{comment: Outro}
+[G] [D] [C] [D] [G]

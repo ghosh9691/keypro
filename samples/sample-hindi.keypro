@@ -1,0 +1,146 @@
+# sample-hindi.keypro
+# A full KeyPro file demonstrating Hindi film song charting.
+# Showcases: Sargam riff notation, kp-scale with Indian raga name,
+# kp-section markers, kp-patch changes, and inline chord/lyric format.
+#
+# Song: Tujhe Dekha To — from Dilwale Dulhania Le Jayenge (1995)
+# Music: Jatin-Lalit | Lyrics: Anand Bakshi
+# Singers: Lata Mangeshkar, Kumar Sanu
+# Genre: Hindi film (Bollywood) romantic ballad
+#
+# Performance notes:
+# - Kafi thaat: komal Ga and komal Ni
+# - The intro and interlude phrases are iconic — learn them, do not skip them
+# - Patch change to Flute on the antara is optional but authentic
+
+{kp-version: 0.1}
+{title: Tujhe Dekha To}
+{subtitle: Dilwale Dulhania Le Jayenge}
+{artist: Lata Mangeshkar / Kumar Sanu}
+{composer: Jatin-Lalit}
+{lyricist: Anand Bakshi}
+{year: 1995}
+{key: G}
+{kp-scale: Kafi}
+{tempo: 72}
+{kp-feel: Slow romantic ballad}
+{kp-notation: sargam}
+{kp-patch: name="Strings Pad" program=49 channel=1}
+
+# ─────────────────────────────────────────────
+# INTRO
+# ─────────────────────────────────────────────
+
+{kp-section: type="intro" label="Intro"}
+{kp-measure: beats=4 bars=4 label="Strings intro — establish feel before melody"}
+
+{kp-riff: id="intro-ascending" notes="Sa Re ga Ma Pa Dha ni Sa" notation="sargam" label="Intro ascending phrase" hand="right" comment="Play slowly, let each note breathe"}
+
+[G] [D] [Em] [C]
+[G] [D] [C] [D]
+
+# ─────────────────────────────────────────────
+# MUKHDA (Main theme — equivalent of chorus)
+# ─────────────────────────────────────────────
+
+{kp-section: type="chorus" label="Mukhda"}
+
+[G]Tujhe dekha to [D]ye jaana sanam
+[Em]Pyaar hota hai [C]deewana sanam
+[G]Abhi jaana [D]sanam
+[C]Hota hai [D]pyaar [G]tera
+
+[G]Tujhe dekha to [D]ye jaana sanam
+[Em]Pyaar hota hai [C]deewana sanam
+[G]Abhi jaana [D]sanam
+[C]Hota hai [D]pyaar [G]tera
+
+# ─────────────────────────────────────────────
+# INTERLUDE 1
+# ─────────────────────────────────────────────
+
+{kp-section: type="interlude" label="Interlude 1"}
+{kp-riff: ref="intro-ascending"}
+
+[G] [D] [Em] [C]
+[G] [D] [C] [D]
+
+# ─────────────────────────────────────────────
+# ANTARA 1 (First verse)
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Antara 1"}
+{kp-patch: name="Flute" program=73 channel=2 comment="Optional — adds authenticity on antara"}
+
+{kp-riff: id="antara-descending" notes="Sa ni Dha Pa Ma ga Re Sa" notation="sargam" label="Antara descending fill" hand="right" comment="Play at end of each antara line"}
+
+[Em]Mere sapnon ki [B7]rani kab [Em]aayegi tu
+[C]Aaya mausam [G]aawara[D]pun ka
+[Em]Dil dhoondta hai [B7]phir wohi [Em]fursat ke raat din
+[C]Baithke rehna [G]kuch na [D]karna
+
+{kp-riff: ref="antara-descending"}
+
+[C]Zindagi mein [G]toh sabhi [D]pyaar karte hain
+[Em]Maine socha [C]kyun na [D]tujhe [G]pyaar kar loon
+
+# ─────────────────────────────────────────────
+# MUKHDA (Repeat)
+# ─────────────────────────────────────────────
+
+{kp-patch: name="Strings Pad" program=49 channel=1}
+{kp-section: type="chorus" label="Mukhda (Repeat)"}
+
+[G]Tujhe dekha to [D]ye jaana sanam
+[Em]Pyaar hota hai [C]deewana sanam
+[G]Abhi jaana [D]sanam
+[C]Hota hai [D]pyaar [G]tera
+
+# ─────────────────────────────────────────────
+# INTERLUDE 2
+# ─────────────────────────────────────────────
+
+{kp-section: type="interlude" label="Interlude 2"}
+{kp-riff: ref="intro-ascending"}
+
+[G] [D] [Em] [C]
+[G] [D] [C] [D]
+
+# ─────────────────────────────────────────────
+# ANTARA 2 (Second verse)
+# ─────────────────────────────────────────────
+
+{kp-section: type="verse" label="Antara 2"}
+{kp-patch: name="Flute" program=73 channel=2}
+
+[Em]Kabhi alvida na [B7]kehna [Em]tum
+[C]Tum jo mil [G]gaye ho toh [D]ye lag raha hai
+[Em]Jahan mil gaya [B7]mujhko [Em]aasman
+[C]Tum jo mil [G]gaye ho toh [D]ye lag raha hai
+
+{kp-riff: ref="antara-descending"}
+
+[C]Zindagi mein [G]toh sabhi [D]pyaar karte hain
+[Em]Maine socha [C]kyun na [D]tujhe [G]pyaar kar loon
+
+# ─────────────────────────────────────────────
+# MUKHDA (Final)
+# ─────────────────────────────────────────────
+
+{kp-patch: name="Strings Pad" program=49 channel=1}
+{kp-section: type="chorus" label="Mukhda (Final)"}
+
+[G]Tujhe dekha to [D]ye jaana sanam
+[Em]Pyaar hota hai [C]deewana sanam
+[G]Abhi jaana [D]sanam
+[C]Hota hai [D]pyaar [G]tera
+
+# ─────────────────────────────────────────────
+# OUTRO
+# ─────────────────────────────────────────────
+
+{kp-section: type="outro" label="Outro — fade"}
+{kp-riff: ref="intro-ascending"}
+
+[G] [D] [Em] [C]
+[G] [D] [C] [D] [G]
